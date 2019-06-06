@@ -26,7 +26,7 @@
 <!-- 搜索引擎抓取 -->
 <meta name="robots" content="index,follow"/>
 <!-- iOS 设备 begin -->
-<meta name="apple-mobile-web-app-title" content="标题">
+<meta name="apple-mobile-web-app-title" content="{{.Title}}">
 <!-- 添加到主屏后的标题（iOS 6 新增） -->
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
@@ -38,13 +38,16 @@
 <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
 <!-- 启用360浏览器的极速模式(webkit) -->
 <meta name="renderer" content="webkit">
-<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+<!-- favicon -->
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/normalize.css" type="text/css">
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 {{ if .Site.Params.enableRSS }}
 <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 {{ range .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+<link type="text/css" rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 {{ end }}
 {{ if .IsPage }}
 <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
