@@ -1,7 +1,9 @@
 baseURL : "http://example.org/"
 languageCode : "zh-CN"
-title : "°zzZ"
+title : "😪"
 theme : "hugo-theme-cactus-dark"
+permalinks:
+  archive: archive/:slug/
 params:
   Author: djkloop
   description: 一个前端技术博客.每天碰到那么多问题, 终归还是需要一个记录的地方.
