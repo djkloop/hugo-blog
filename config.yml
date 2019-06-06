@@ -1,0 +1,10 @@
+baseURL : "http://example.org/"
+languageCode : "zh-CN"
+title : "djkloop"
+theme : "hugo-theme-cactus-dark"
+params:
+  Author: djkloop
+  description: 一个前端技术博客.每天碰到那么多问题, 终归还是需要一个记录的地方.
+  keywords: [djkloop,前端爱好者,前端开发,web前端博客,js,html5,css,Vue.js,React.js，Angular.js,node.js]
+  _theme: "hugo-theme-cactus-dark"
+

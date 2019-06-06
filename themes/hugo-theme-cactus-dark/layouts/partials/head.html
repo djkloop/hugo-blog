@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html {{with .Site.Params._theme}}data-hugo-use-theme="{{ . }}"{{ end }} {{with .Site.LanguageCode}}lang="{{ . }}"{{ end }}>
+<head>
+    {{ partial "meta.html" . }}
+    <title>{{ if .IsHome }}{{.Site.Params.author}} | 前端爱好者{{ else }}{{ .Title }} | 前端爱好者 - djkloop {{ end }}</title>
+</head>
