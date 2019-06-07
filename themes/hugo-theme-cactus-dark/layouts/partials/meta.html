@@ -39,10 +39,10 @@
 <!-- 启用360浏览器的极速模式(webkit) -->
 <meta name="renderer" content="webkit">
 <!-- favicon -->
-<link rel="shortcut icon" href="images/favicon.png">
-<link rel="stylesheet" href="css/normalize.css" type="text/css">
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.css" type="text/css">
+<link href="{{ .Site.BaseURL }}css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css">
 {{ if .Site.Params.enableRSS }}
 <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
@@ -53,7 +53,7 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 {{ end }}
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
 <script>
     document.addEventListener("error", function (e) {
         var elem = e.target;

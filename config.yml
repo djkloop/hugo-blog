@@ -1,4 +1,4 @@
-baseURL : "http://example.org/"
+baseURL : "http://localhost:1313/"
 languageCode : "zh-CN"
 title : "😪"
 theme : "hugo-theme-cactus-dark"
@@ -9,6 +9,9 @@ params:
   description: 一个前端技术博客.每天碰到那么多问题, 终归还是需要一个记录的地方.
   keywords: [djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js]
   _theme: "hugo-theme-cactus-dark"
+  github:
+    author: 'djkloop'
+    url: 'https://github.com/djkloop'
   customize:
     logo:
         enable: true
