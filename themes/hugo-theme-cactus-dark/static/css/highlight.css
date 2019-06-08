@@ -1,101 +1,105 @@
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/**
+ * Shades of Purple Theme — for Highlightjs.
+ *
+ * @author (c) Ahmad Awais <https://twitter.com/mrahmadawais/>
+ * @link GitHub Repo → https://github.com/ahmadawais/Shades-of-Purple-HighlightJS
+ * @version 1.5.0
+ */
 
-code {
-    background: #262626;
-    font-size: 13px;
-    color: #888888;
-    /*font-weight: 100;*/
-    padding: 4px;
-    border: none;
-    /*box-shadow: inset 0 0 0 1px #E4EBF2;*/
-    border-radius: 4px;
-    overflow: scroll;
-    font-family: 'Roboto Mono', monospace;
+ .hljs {
+	display: block;
+	overflow-x: auto;
+	/* Custom font is optional */
+	/* font-family: 'Operator Mono', 'Fira Code', 'Menlo', 'Monaco', 'Courier New', 'monospace';  */
+	background: #232527;
+	font-weight: normal;
 }
 
-pre code {
-    font-size: 13px;
-    word-wrap: break-word;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-    padding: 16px;
-    padding-bottom: 14px;
-    display: block;
-    color: #888888;
-    background: #181818;
-    border: none;
-    /*box-shadow: inset 0 0 0 1px #262626;*/
-    border-radius: none;
-    overflow: auto;
+.hljs-title {
+	color: #fad000;
+	font-weight: normal;
 }
 
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-    color: #424242;
+.hljs-name {
+	color: #a1feff;
 }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-    color: #b14d4c;
-
+.hljs-tag {
+	color: #ffffff;
 }
 
-/* Tomorrow Orange */
-.hljs-number,
+.hljs-attr {
+	color: #f8d000;
+	font-style: italic;
+}
+
 .hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-    color: #f5871f;
+.hljs-selector-tag,
+.hljs-section {
+	color: #fb9e00;
 }
 
-/* Tomorrow Yellow */
-.hljs-attribute {
-    color: #a6a84e;
+.hljs-keyword {
+	color: #fb9e00;
 }
 
-/* Tomorrow Green */
+.hljs,
+.hljs-subst {
+	color: #e3dfff;
+}
+
 .hljs-string,
+.hljs-attribute,
 .hljs-symbol,
 .hljs-bullet,
-.hljs-addition {
-    color: #4ea272;
+.hljs-addition,
+.hljs-code,
+.hljs-regexp,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-template-tag,
+.hljs-quote,
+.hljs-deletion {
+	color: #4cd213;
 }
 
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-    color: #4271ae;
+.hljs-meta,
+.hljs-meta-string {
+	color: #fb9e00;
 }
 
-/* Tomorrow Purple */
+.hljs-comment {
+	color: #ac65ff;
+}
+
 .hljs-keyword,
-.hljs-selector-tag {
-    color: #8959a8;
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name,
+.hljs-strong {
+	font-weight: normal;
 }
 
-code.hljs {
-    display: block;
-    white-space: pre;
-    overflow-x: auto;
-    word-wrap: normal;
+.hljs-literal,
+.hljs-number {
+	color: #fa658d;
 }
 
 .hljs-emphasis {
-    font-style: italic;
+	font-style: italic;
 }
 
 .hljs-strong {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+pre code {
+    display: block;
+    background: black;
+    color: #eaeaea;
+    font-family: Menlo, Monaco, Consolas, monospace;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 4px;
 }

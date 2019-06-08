@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+<body>
+<div id="app" class="content index width mx-auto px3 my4">
+  {{ partial "nav.html" . }}
+
+  {{ partial "tagcloud.html" . }}
+  <div id="app-content" class="archive">
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "footer.html" . }}
+</body>

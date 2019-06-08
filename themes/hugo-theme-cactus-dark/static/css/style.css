@@ -478,10 +478,10 @@ body {
     -ms-hyphens: manual;
     -webkit-hyphens: manual;
     hyphens: manual;
-    margin-bottom: .5rem
 }
 
-.content a {
+.content a,
+.readmore a{
     text-decoration: none;
     color: #c9cacc;
     word-wrap: break-word;
@@ -489,6 +489,10 @@ body {
     background-position: bottom;
     background-size: 100% 6px;
     background-image: linear-gradient(transparent,transparent 5px,#c9cacc 5px,#c9cacc)
+}
+
+.readmore a{
+    background-image: linear-gradient(transparent,transparent 5px,rgba(255, 255, 255, .3) 5px,rgba(255, 255, 255, .3))
 }
 
 .content a:hover {
@@ -539,7 +543,7 @@ body {
 
 .width {
     width: 100%;
-    max-width: 39rem
+    max-width: 48rem
 }
 
 @media (max-width: 480px) {
@@ -608,7 +612,9 @@ body {
     background-size: 50px 50px;
     border-radius: 5px;
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%)
+    filter: blur(1px) grayscale(100%);
+    -webkit-transition: filter .5s;
+    transition: filter .5s;
 }
 
 #header #nav {
@@ -772,9 +778,18 @@ body {
     padding-top: .5rem
 }
 
+#header-post #share {
+    overflow: hidden;
+}
+
+#header-post #share ul {
+    width: 200px;
+    float: right;
+}
+
 #header-post #share li {
     margin: 0;
-    display: block
+    display: inline-block;
 }
 
 #header-post #toc .toc-level-1,#header-post #toc .toc-level-5,#header-post #toc .toc-level-6,#header-post #toc .toc-number {
@@ -1416,11 +1431,11 @@ article .content .caption {
 
 pre {
     font-size: 13px;
-    padding: 10px 15px 0;
     line-height: 22px;
+    padding: 5px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    background-color: #232527
+    background-color: #232527;
 }
 
 code {
@@ -1595,26 +1610,18 @@ pre code {
     margin-bottom: 0;
 }
 
-
-#more-post-list li:last-child {
-    border-bottom: 1px solid #c9cacc;
+#more-post-list li {
+    padding: 5px;
+    border-top: none;
 }
 
 #more-post-list a {
-    color: #333;
-    display: block;
-    font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
-    background-image:none;
-    color:#c9cacc;
-    font-size: 18px;
+    display: inline-block;
 }
 
 #more-post-list .dates {
-    float: right;
-    position: relative;
-    top: 1px;
-    font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
-    color: #c9cacc;
+    color: rgba(255, 255, 255, .3);
+    font-size: 12px;
 }
 @media (max-width: 540px) {
     #more-post-list .dates{

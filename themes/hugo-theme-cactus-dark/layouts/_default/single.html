@@ -1,3 +1,50 @@
-<body>
-  single.file
-</body>
+{{ partial "head.html" . }}
+<bod>
+    {{ partial "post/actions_desktop.html" . }}
+    <div class="content index width mx-auto px3 my3">
+      <section id="wrapper" class="home">
+        <article class="post">
+            <header>
+              <h1 class="posttitle" itemprop="name headline">
+                {{ .Title }}
+              </h1>
+              <div class="meta">
+                <div class="postdate">
+                  <time datetime='{{ .Date.Format "2006-01-02" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+                </div>
+                <div class="article-tag">
+                  <i class="fa fa-eye"></i>
+                  <span id="busuanzi_container_page_pv">
+                      <span id="busuanzi_value_page_pv">0</span>
+                    </span>
+                  </span>
+                </div>
+                {{ if .Params.tags }}
+                  <div class="article-tag">
+                    <i class="fa fa-tag"></i>
+                    {{ range .Params.tags }}
+                    <a href="/tags/{{ . | urlize }}">
+                        {{ . }}</a>
+                      {{ end }}
+                  </div>
+                {{ end }}
+                <div class="article-tag-box">
+                </div>
+              </div>
+            </header>
+            <div class="content">
+              {{ .Content }}
+              <h2> 本文链接：</h2>
+              <a href='{{.Permalink}}' target="_blank">{{.Permalink}}</a>
+              {{ partial "post/latest-posts.html" . }}
+            </div>
+        </article>
+        {{ if eq .Site.Params.Customize.Valine.Enable true }}
+          {{ partial "post/comments.html" . }}
+        {{end}}
+      </section>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "js.html" . }}
+  </body>
+</html>

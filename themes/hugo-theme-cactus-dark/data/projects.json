@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "url": "https://gohugo.io/",
+      "name": "Hugo",
+      "desc": "The world’s fastest framework for building websites"
+    },
+    {
+      "url": "https://fontawesome.com/",
+      "name": "Font Awesome",
+      "desc": "The iconic font and CSS toolkit"
+    },
+    {
+      "url": "https://getbootstrap.com/",
+      "name": "Bootstrap",
+      "desc": "The world’s most popular front-end component library."
+    }
+  ]
+}

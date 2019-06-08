@@ -1,0 +1,12 @@
+<section id="projects">
+  <span class="h1"><a href="{{.Site.Params.customize.projects_url}}" rel="external nofollow noopener noreferrer" target="_blank">Projects</a></span>
+  <ul class="project-list">
+    {{ range .Site.Data.projects }}
+      {{ range .}}
+      <li class="project-item">
+        <a href="{{ .url }}" target="_blank">{{ .name }}</a>: {{ .desc }}
+      {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</section>

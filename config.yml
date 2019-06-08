@@ -9,15 +9,55 @@ params:
   description: 一个前端技术博客.每天碰到那么多问题, 终归还是需要一个记录的地方.
   keywords: [djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js]
   _theme: "hugo-theme-cactus-dark"
+
+  powered:
+    enable: true
+    url: "https://gohugo.io/"
+    cli: "Hugo"
+
   github:
     author: 'djkloop'
     url: 'https://github.com/djkloop'
+
   customize:
+    # Customize the logo (i.e., the cactus) in the header.
+    # Options:
+    #   - enabled: whether to show (true) or hide (false) the logo.
+    #   - width: width of the logo in pixel units
+    #   - height: height of the logo in pixel units
+    #   - url: where the logo can be found
+    #   - gravatar: whether to use your Gravatar as the logo
     logo:
         enable: true
         width: 50
         height: 50
-        url: /images/logo2.png
+        url: /images/logo.png
         gravatar: false
+
+    # https://valine.js.org/quickstart.html
+    valine:
+      enable: true
+      LeanCloudAppID: "db74NGgiUiGT5HkLTBoDK7Tl-gzGzoHsz"  # 填写自己的leanCloudAppId
+      LeanCloudAppKey: "ApR14unweK4ln7MlK4yDGn63" # 填写自己的leanCloudAppKey
+      notify: false
+      verify: false
+      avatar: 'mp'
+      placeholder: 'just go go'
+
+    # Links to your social media accounts.
+    # The keys should correspond to Fontawesome icon names
+    # (see https://fontawesome.com/icons?d=gallery&s=brands);
+    # only 'mail' is an exception.
+    social_links:
+      github: http://github.com/probberechts/cactus-dark
+      twitter: /
+      facebook-square: /
+      linkedin: /
+      email: mailto:name@email.com
+
+    # Link to a page that gives an overview of all your projects.
+    # This can be an external link (e.g., to you GitHub profile) or to another
+    # page within your website.
+    projects_url: http://github.com/djkloop
 
 
